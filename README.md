@@ -88,7 +88,7 @@ The automated training sequence evaluated multiple supervised classification alg
 
 1. Clone the repository:
 ```bash
-git clone [https://github.com/yourusername/heart-disease-prediction.git](https://github.com/yourusername/heart-disease-prediction.git))
+git clone [https://github.com/yourusername/heart-disease-prediction.git](https://github.com/yourusername/heart-disease-prediction.git)
 ````
 
 Developed a Machine Learning project to predict Hard Disk performance &amp; transfer speeds. Built an automated pipeline evaluating multiple supervised models. Features dual UIs: an interactive Python-based Streamlit dashboard and a responsive full-stack HTML/CSS/JS frontend connected to an ML backend. Great for hardware optimization!
