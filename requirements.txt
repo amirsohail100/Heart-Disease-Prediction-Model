@@ -1,0 +1,12 @@
+# Data Analysis and Manipulation
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Machine Learning and Validation
+scikit-learn>=1.2.0
+
+# User Interface
+streamlit>=1.22.0
+
+# Web Requests (if backend API is used)
+requests>=2.31.0
