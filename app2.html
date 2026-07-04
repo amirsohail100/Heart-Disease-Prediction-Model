@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Heart Stroke Prediction</title>
+    <!-- PyScript CSS और JS को लिंक करें -->
+    <link rel="stylesheet" href="pyscript.net">
+    <script defer src="pyscript.net"></script>
+    <style>
+        body { font-family: sans-serif; max-width: 600px; margin: 20px auto; padding: 20px; }
+        .container { background-color: #f9f9f9; padding: 20px; border-radius: 8px; }
+        .input-group { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; font-weight: bold; }
+        input, select, button { width: 100%; padding: 10px; margin-top: 5px; border-radius: 4px; border: 1px solid #ccc; box-sizing: border-box; }
+        button { background-color: #007bff; color: white; border: none; cursor: pointer; margin-top: 20px; }
+        button:hover { background-color: #0056b3; }
+        #output { margin-top: 20px; padding: 15px; border-radius: 4px; }
+        .error { background-color: #f8d7da; color: #721c24; }
+        .success { background-color: #d4edda; color: #155724; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Heart stroke prediction by Amir 💖</h1>
+        <p>Provide the following details</p>
+
+        <div class="input-group">
+            <label for="age">Age: <span id="age-val">40</span></label>
+            <input type="range" id="age" min="18" max="100" value="40" oninput="document.getElementById('age-val').innerText = this.value">
+        </div>
+
+        <div class="input-group">
+            <label for="sex">SEX</label>
+            <select id="sex">
+                <option value="M">M</option>
+                <option value="F">F</option>
+            </select>
+        </div>
+        
+        <div class="input-group">
+            <label for="chest_pain">Chest Pain Type</label>
+            <select id="chest_pain">
+                <option value="ATA">ATA</option>
+                <option value="NAP">NAP</option>
+                <option value="TA">TA</option>
+                <option value="ASY">ASY</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label for="resting_BP">BP (mmHg)</label>
+            <input type="number" id="resting_BP" value="120" min="80" max="200">
+        </div>
+
+        <div class="input-group">
+            <label for="cholesterol">Cholesterol (mg/dL)</label>
+            <input type="number" id="cholesterol" value="200" min="100" max="600">
+        </div>
+
+        <div class="input-group">
+            <label for="fasting_BS">Fasting BS > 120 mg/dL</label>
+            <select id="fasting_BS">
+                <option value="0">0</option>
+                <option value="1">1</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label for="resting_ECG">Resting ECG</label>
+            <select id="resting_ECG">
+                <option value="Normal">Normal</option>
+                <option value="ST">ST</option>
+                <option value="LVH">LVH</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label for="max_hr">Max HR: <span id="max_hr-val">150</span></label>
+            <input type="range" id="max_hr" min="60" max="220" value="150" oninput="document.getElementById('max_hr-val').innerText = this.value">
+        </div>
+
+        <div class="input-group">
+            <label for="ex_angina">Exercise-Induced Angina</label>
+            <select id="ex_angina">
+                <option value="Y">Y</option>
+                <option value="N">N</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label for="oldpeak">Oldpeak (ST Depression): <span id="oldpeak-val">1.0</span></label>
+            <input type="range" id="oldpeak" min="0.0" max="5.0" step="0.1" value="1.0" oninput="document.getElementById('oldpeak-val').innerText = this.value">
+        </div>
+
+        <div class="input-group">
+            <label for="st_slope">ST Slope</label>
+            <select id="st_slope">
+                <option value="Up">Up</option>
+                <option value="Flat">Flat</option>
+                <option value="Down">Down</option>
+            </select>
+        </div>
+        
+        <button id="predict-button" pys-onClick="predict_heart_stroke">Predict</button>
+
+        <div id="output"></div>
+    </div>
+</body>
+</html>
