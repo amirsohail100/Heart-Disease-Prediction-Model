@@ -14,13 +14,13 @@ The project is equipped with dual user interfaces to showcase both rapid prototy
 
 An interactive, clean, and highly efficient analytical dashboard built completely in Python using Streamlit. Ideal for instant predictions and data explorations.
 
-![Streamlit UI](path/to/your/streamlit_ui_image.png)
+![Streamlit UI](streamlit_ui_image.png)
 
 ### 2. Full-Stack Web UI (HTML, CSS & JavaScript)
 
 A custom-designed, fully responsive, and highly polished front-end web portal created with semantic HTML5, modern CSS styling, and interactive JavaScript, connecting to the ML backend API.
 
-![Web UI](path/to/your/web_ui_image.png)
+![Web UI](web_ui_image.png)
 
 ## 📊 Dataset Features
 
