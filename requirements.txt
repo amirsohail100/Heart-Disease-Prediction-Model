@@ -1,12 +1,6 @@
-# Data Analysis and Manipulation
-pandas>=2.0.0
-numpy>=1.24.0
-
-# Machine Learning and Validation
-scikit-learn>=1.2.0
-
-# User Interface
-streamlit>=1.22.0
-
-# Web Requests (if backend API is used)
-requests>=2.31.0
+numpy>=1.22.0
+pandas>=1.4.0
+scikit-learn>=1.0.0
+xgboost>=1.5.0
+matplotlib>=3.5.0
+seaborn>=0.11.0
