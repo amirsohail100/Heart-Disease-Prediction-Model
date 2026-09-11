@@ -1,6 +1,6 @@
-numpy>=1.22.0
-pandas>=1.4.0
-scikit-learn>=1.0.0
-xgboost>=1.5.0
-matplotlib>=3.5.0
-seaborn>=0.11.0
+fastapi==0.128.0
+uvicorn==0.40.0
+pandas==2.3.3
+scikit-learn==1.8.0
+joblib==1.5.3
+numpy==2.2.6
